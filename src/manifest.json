@@ -1,7 +1,7 @@
 {
     "lang": "en-US",
-    "name": "Template",
-    "short_name": "tmp",
+    "name": "Angular Project Template",
+    "short_name": "AngularPT",
     "description": "Angular Project Template",
     "icons": [
         {
@@ -45,8 +45,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "index.html",
-    "scope": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#192a51",
