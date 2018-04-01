@@ -1,7 +1,7 @@
 {
     "lang": "en-US",
-    "name": "Template",
-    "short_name": "tmp",
+    "name": "Angular Project Template",
+    "short_name": "AngularPT",
     "description": "Angular Project Template",
     "icons": [
         {
