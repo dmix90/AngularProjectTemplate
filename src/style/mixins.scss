@@ -1,0 +1,21 @@
+@mixin mq-max-width($arg) {
+    @media screen and (max-width: $arg) {
+      @content;
+    }
+  }
+
+  @mixin mq-min-width($arg) {
+    @media screen and (min-width: $arg) {
+      @content;
+    }
+  }
+
+  @mixin display-flex($flow, $wrap) {
+    display: flex;
+    flex-flow: $flow $wrap;
+  }
+
+  @mixin flex-align($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+  }

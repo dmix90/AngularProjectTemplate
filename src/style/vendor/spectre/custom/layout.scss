@@ -1,0 +1,52 @@
+$unit-o: .05rem;
+$unit-h: .1rem;
+$unit-1: .2rem;
+$unit-2: .4rem;
+$unit-3: .6rem;
+$unit-4: .8rem;
+$unit-5: 1rem;
+$unit-6: 1.2rem;
+$unit-7: 1.4rem;
+$unit-8: 1.6rem;
+$unit-9: 1.8rem;
+$unit-10: 2rem;
+$unit-12: 2.4rem;
+$unit-16: 3.2rem;
+
+$layout-spacing: $unit-2;
+$layout-spacing-sm: $unit-1;
+$layout-spacing-lg: $unit-4;
+$border-radius: $unit-h;
+$border-width: $unit-o;
+$border-width-lg: $unit-h;
+$control-size: $unit-9;
+$control-size-sm: $unit-7;
+$control-size-lg: $unit-10;
+$control-padding-x: $unit-2;
+$control-padding-x-sm: $unit-2 * .75;
+$control-padding-x-lg: $unit-2 * 1.5;
+$control-padding-y: ($control-size - $line-height) / 2 - $border-width;
+$control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width;
+$control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width;
+$control-icon-size: .8rem ;
+
+$control-width-xs: 180px;
+$control-width-sm: 320px;
+$control-width-md: 640px;
+$control-width-lg: 960px;
+$control-width-xl: 1280px;
+
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 840px;
+$size-lg: 960px;
+$size-xl: 1280px;
+$size-2x: 1440px;
+
+$responsive-breakpoint: $size-xs;
+
+$zindex-0: 1;
+$zindex-1: 100;
+$zindex-2: 200;
+$zindex-3: 300;
+$zindex-4: 400;
