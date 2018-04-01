@@ -35,6 +35,9 @@
       "@environments/*": [
         "environments/*"
       ],
+      "@app/*": [
+        "app/*"
+      ],
     }
   }
 }

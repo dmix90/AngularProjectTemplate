@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('abulma App', () => {
+describe('Template App', () => {
   let page: AppPage;
 
   beforeEach(() => {
