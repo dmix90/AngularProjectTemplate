@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, RouterLinkActive } from '@angular/router';
-import { HomeComponent } from './views/home/home.component';
-import { ErrorComponent } from './views/error/error.component';
+import { HomeComponent } from '@views/home/home.component';
+import { ErrorComponent } from '@views/error/error.component';
 
 @NgModule({
   imports: [RouterModule.forRoot([

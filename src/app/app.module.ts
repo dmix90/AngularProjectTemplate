@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-import { HeaderComponent } from './views/header/header.component';
-import { FooterComponent } from './views/footer/footer.component';
-import { HomeComponent } from './views/home/home.component';
-import { ErrorComponent } from './views/error/error.component';
-import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from '@views/header/header.component';
+import { FooterComponent } from '@views/footer/footer.component';
+import { HomeComponent } from '@views/home/home.component';
+import { ErrorComponent } from '@views/error/error.component';
+import { AppRoutingModule } from '@modules/app.routing.module';
 //PWA
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { environment } from '@environments/environment';
 //
 
 @Component({
