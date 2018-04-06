@@ -12,7 +12,7 @@
 *node_modules
 
 #config
-#ormconfig.json
+#*ormconfig.json
 
 # IDEs and editors
 /.idea
