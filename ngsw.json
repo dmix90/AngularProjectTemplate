@@ -1,18 +1,18 @@
 {
   "configVersion": 1,
-  "index": "/AngularProjectTemplate/index.html",
+  "index": "'/AngularProjectTemplate/'/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/AngularProjectTemplate/favicon.ico",
-        "/AngularProjectTemplate/index.html",
-        "/AngularProjectTemplate/inline.318b50c57b4eba3d437b.bundle.js",
-        "/AngularProjectTemplate/main.fd95608a45060abefd0c.bundle.js",
-        "/AngularProjectTemplate/polyfills.ed2ae3cde16bd082ba08.bundle.js",
-        "/AngularProjectTemplate/styles.58eaa706e4c249a0c2d3.bundle.css"
+        "'/AngularProjectTemplate/'/favicon.ico",
+        "'/AngularProjectTemplate/'/index.html",
+        "'/AngularProjectTemplate/'/inline.318b50c57b4eba3d437b.bundle.js",
+        "'/AngularProjectTemplate/'/main.3b69f81f48e8eecabc97.bundle.js",
+        "'/AngularProjectTemplate/'/polyfills.ed2ae3cde16bd082ba08.bundle.js",
+        "'/AngularProjectTemplate/'/styles.58eaa706e4c249a0c2d3.bundle.css"
       ],
       "patterns": []
     },
@@ -21,33 +21,33 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "/AngularProjectTemplate/assets/icons/icon-128x128.png",
-        "/AngularProjectTemplate/assets/icons/icon-144x144.png",
-        "/AngularProjectTemplate/assets/icons/icon-152x152.png",
-        "/AngularProjectTemplate/assets/icons/icon-192x192.png",
-        "/AngularProjectTemplate/assets/icons/icon-384x384.png",
-        "/AngularProjectTemplate/assets/icons/icon-512x512.png",
-        "/AngularProjectTemplate/assets/icons/icon-72x72.png",
-        "/AngularProjectTemplate/assets/icons/icon-96x96.png"
+        "'/AngularProjectTemplate/'/assets/icons/icon-128x128.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-144x144.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-152x152.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-192x192.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-384x384.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-512x512.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-72x72.png",
+        "'/AngularProjectTemplate/'/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/AngularProjectTemplate/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "/AngularProjectTemplate/assets/icons/icon-128x128.png": "44c0c872b9e30b18f3323c1af2cad15c8981c00d",
-    "/AngularProjectTemplate/main.fd95608a45060abefd0c.bundle.js": "444c9e7a3cf542e5da3e5bf03de3649887f4a03d",
-    "/AngularProjectTemplate/assets/icons/icon-144x144.png": "7a3946705a694643303c68c18ce3222c4762657b",
-    "/AngularProjectTemplate/polyfills.ed2ae3cde16bd082ba08.bundle.js": "8920612d9d5677361123d47490e38ff14a12fc54",
-    "/AngularProjectTemplate/assets/icons/icon-152x152.png": "b9f5c08bc79debdf88ca7c5d0a25cdc8d59673f0",
-    "/AngularProjectTemplate/styles.58eaa706e4c249a0c2d3.bundle.css": "9566a521c0b90bbfd50befdea8fd984a06c597e8",
-    "/AngularProjectTemplate/assets/icons/icon-192x192.png": "a97b8b66f845f70dabd2a8436dc6d5f299dd2a53",
-    "/AngularProjectTemplate/favicon.ico": "3261f7803a31256bbe539926541475ebc5e8d3f0",
-    "/AngularProjectTemplate/assets/icons/icon-384x384.png": "ec24ea30424f44f995b49363368080c42254cc75",
-    "/AngularProjectTemplate/index.html": "6b21e593d988fa3bdcb9ace919d6f12df0b946e4",
-    "/AngularProjectTemplate/assets/icons/icon-512x512.png": "2d214caae4fe1f36f51864609703c5275a686039",
-    "/AngularProjectTemplate/assets/icons/icon-72x72.png": "e7eedad75ee40e8ce4f63b96d4c6dfb424c11330",
-    "/AngularProjectTemplate/assets/icons/icon-96x96.png": "b8d99fdd15e1d101325ff6a1f533770de455c7b6"
+    "'/AngularProjectTemplate/'/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "'/AngularProjectTemplate/'/assets/icons/icon-128x128.png": "44c0c872b9e30b18f3323c1af2cad15c8981c00d",
+    "'/AngularProjectTemplate/'/main.3b69f81f48e8eecabc97.bundle.js": "a9d586dbbdaa6f966460ac807088d9d28ffc19fd",
+    "'/AngularProjectTemplate/'/assets/icons/icon-144x144.png": "7a3946705a694643303c68c18ce3222c4762657b",
+    "'/AngularProjectTemplate/'/polyfills.ed2ae3cde16bd082ba08.bundle.js": "8920612d9d5677361123d47490e38ff14a12fc54",
+    "'/AngularProjectTemplate/'/assets/icons/icon-152x152.png": "b9f5c08bc79debdf88ca7c5d0a25cdc8d59673f0",
+    "'/AngularProjectTemplate/'/styles.58eaa706e4c249a0c2d3.bundle.css": "9566a521c0b90bbfd50befdea8fd984a06c597e8",
+    "'/AngularProjectTemplate/'/assets/icons/icon-192x192.png": "a97b8b66f845f70dabd2a8436dc6d5f299dd2a53",
+    "'/AngularProjectTemplate/'/favicon.ico": "3261f7803a31256bbe539926541475ebc5e8d3f0",
+    "'/AngularProjectTemplate/'/assets/icons/icon-384x384.png": "ec24ea30424f44f995b49363368080c42254cc75",
+    "'/AngularProjectTemplate/'/index.html": "492e4c54ed8f55e8c8b752d2657c3f8cb3d2e1e6",
+    "'/AngularProjectTemplate/'/assets/icons/icon-512x512.png": "2d214caae4fe1f36f51864609703c5275a686039",
+    "'/AngularProjectTemplate/'/assets/icons/icon-72x72.png": "e7eedad75ee40e8ce4f63b96d4c6dfb424c11330",
+    "'/AngularProjectTemplate/'/assets/icons/icon-96x96.png": "b8d99fdd15e1d101325ff6a1f533770de455c7b6"
   }
 }
