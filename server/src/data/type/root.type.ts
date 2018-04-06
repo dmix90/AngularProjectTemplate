@@ -1,1 +1,1 @@
-export { TaskType } from './types/task.type';
+export { TaskType } from '@_types/task.type';
