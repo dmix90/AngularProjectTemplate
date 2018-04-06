@@ -1,0 +1,37 @@
+@import '~style/common';
+
+:host{
+    width: 100%;
+    min-height: 40px;
+    height:40px;
+    background: color($defaultPalette, primary, base);
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:center;
+    color:white;
+    & ul{
+        padding: 0;
+        margin: 0;
+        list-style:none;
+        display:flex;
+        width: 50%;
+        height: 100%;
+        justify-content: space-between;
+        align-items:center;
+        & li{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100px;
+            height: 100%;
+        }
+    }
+}
+span{
+    width:14px;
+    height:14px;
+    background:color($defaultPalette, error, base);
+    border-radius: 50%;
+    margin: 10px;
+}

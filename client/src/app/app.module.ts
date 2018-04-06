@@ -5,10 +5,19 @@ import { FooterComponent } from '@views/footer/footer.component';
 import { HomeComponent } from '@views/home/home.component';
 import { ErrorComponent } from '@views/error/error.component';
 import { AppRoutingModule } from '@modules/app.routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+//Apollo GraphQL
+import { ApolloModule, Apollo } from 'apollo-angular';
+import { HttpLinkModule, HttpLink } from 'apollo-angular-link-http';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+//
 //PWA
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '@environments/environment';
 //
+import { TodoComponent } from '@components/todo/todo.component';
+import { StatusComponent } from './components/status/status.component';
 
 @Component({
   selector: 'app-root',
@@ -27,13 +36,26 @@ export class AppComponent { }
     FooterComponent,
     HomeComponent,
     ErrorComponent,
+    TodoComponent,
+    StatusComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : [],
+    FormsModule,
+    HttpClientModule,
+    ApolloModule,
+    HttpLinkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(apollo: Apollo, httpLink: HttpLink) {
+    apollo.create({
+      link: httpLink.create({ uri: "http://localhost:4201/graphql" }),
+      cache: new InMemoryCache()
+    });
+  }
+}
