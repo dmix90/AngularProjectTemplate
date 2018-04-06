@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "buildgh": "ng build --prod --base-href '/AngularProjectTemplate/'",
+    "build_gh": "ng build --prod --base-href '/AngularProjectTemplate/' && ngh",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
