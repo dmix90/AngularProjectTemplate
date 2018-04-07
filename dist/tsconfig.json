@@ -31,7 +31,7 @@
             "@type/*": [
                 "data/type/*"
             ],
-            "@types/*": [
+            "@_types/*": [
                 "data/type/types/*"
             ],
             "@query/*": [
