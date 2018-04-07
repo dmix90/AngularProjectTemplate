@@ -1,0 +1,57 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "../dist/server",
+        "noImplicitAny": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "lib": [
+            "es2017"
+        ],
+        "types": [
+            "node"
+        ],
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@data/*": [
+                "data/*"
+            ],
+            "@entity/*": [
+                "data/entity/*"
+            ],
+            "@entities/*": [
+                "data/entity/entities/*"
+            ],
+            "@mutation/*": [
+                "data/mutation/*"
+            ],
+            "@mutations/*": [
+                "data/mutation/mutations/*"
+            ],
+            "@type/*": [
+                "data/type/*"
+            ],
+            "@_types/*": [
+                "data/type/types/*"
+            ],
+            "@query/*": [
+                "data/query/*"
+            ],
+            "@queries/*": [
+                "data/query/queries/*"
+            ],
+            "@seed/*": [
+                "data/seed/*"
+            ],
+            "@seeds/*": [
+                "data/seed/seeds/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

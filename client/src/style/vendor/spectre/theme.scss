@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'components';
+
+.btn-twitter{
+    @include button-variant(#343434);
+}
+.btn-outline-twitter{
+    @include button-outline-variant(#343434);
+}

@@ -1,0 +1,39 @@
+@import 'vendor/normalize';
+
+@import 'common';
+
+html {
+    box-sizing: border-box;
+    // font-size: $baseFontSize;
+    // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    @include fluid-type(320px, 1200px, 16px, 18px);
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    min-height: 0;
+    min-width: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    // font-size: $bodyFontSize;
+    font-family: $bodyFontFamily;
+    font-weight: 400;
+    color: color($defaultPalette, font, base);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    background: color($defaultPalette, background, light);
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

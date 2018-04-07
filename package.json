@@ -1,0 +1,22 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dmitry Shikunov <dshikunov@outlook.com> (https://github.com/dmix90)",
+  "license": "MIT",
+  "scripts": {
+    "initialize": "(yarn install) && (cd ./client && yarn install) && (cd ../server && yarn install) && (cd ../dist && yarn install)",
+    "dev_client": "cd ./client && ng serve",
+    "dev_server": "cd ./server && yarn serve",
+    "build_client": "cd ./client && ng build --prod --output-path=../dist/client",
+    "build_client_gh": "cd ./client && yarn build_gh",
+    "build_server": "cd ./server && tsc --sourceMap false --lib esnext",
+    "dev": "concurrently --kill-others \"yarn dev_client\" \"yarn dev_server\"",
+    "build": "yarn build_server && yarn build_client",
+    "production": "concurrently --kill-others \"cd ./dist && yarn server\" \"serve -s ./dist/client\""
+  },
+  "dependencies": {
+    "serve": "^6.5.3",
+    "concurrently": "^3.5.1"
+  }
+}

@@ -1,0 +1,8 @@
+@mixin animationPulse($duration, $direction){
+    animation: pulse infinite $duration ease-in-out;
+    animation-direction: $direction;
+    @keyframes pulse{
+        from{transform: scale(1); fill:color($defaultPalette, primary, base);}
+        to{transform: scale(1.05); fill:color($defaultPalette, primary, light);}
+    }
+}

@@ -1,0 +1,49 @@
+@import '~style/common';
+@import '~style/custom/animations';
+
+:host{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+svg{
+    width: 200px;
+    fill:color($defaultPalette, primary, base);
+    @include animationPulse(1.5s, alternate);
+}
+nav{
+    display:flex;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    & ul{
+        list-style:none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        & li{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    a{
+        text-decoration:none;
+        color:color($defaultPalette, primary, base);
+        font-weight: 600;
+        &:hover{
+            color:color($defaultPalette, error, base);
+        }
+    }
+}
+.active-link{
+    color:color($defaultPalette, error, base)!important;
+}

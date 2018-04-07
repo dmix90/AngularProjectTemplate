@@ -1,0 +1,31 @@
+<h4>Todo List</h4>
+<div class="todo">
+    <header>
+        <input type="text" name="todo" id="todo" placeholder="What ya need to do?" #todoVal (keyup.enter)="addTodo(todoVal.value)">
+        <button (click)="addTodo(todoVal)">Add</button>
+    </header>
+    <ul>
+        <li *ngFor="let todo of todos" (click)="completeTodo(todo.id, $event)">
+            <div *ngIf="todo.completed; else content" style="text-decoration: line-through;">
+                <div *ngIf="todo.editActive;else showTodo">
+                    <input (click)="$event.stopPropagation()" type="text" id="edit" [(ngModel)]="todo.description">
+                </div>
+                <ng-template #showTodo>
+                    {{todo.description}}
+                </ng-template>
+            </div>
+            <ng-template #content>
+                <div *ngIf="todo.editActive; else showTodo">
+                    <input (click)="$event.stopPropagation()" type="text" id="edit" [(ngModel)]="todo.description">
+                </div>
+                <ng-template #showTodo>
+                    {{todo.description}}
+                </ng-template>
+            </ng-template>
+            <span>
+                <button (click)="updateTodo(todo.id, $event)">Update</button>
+                <button class="close" (click)="removeTodo(todo.id)">X</button>
+            </span>
+        </li>
+    </ul>
+</div>

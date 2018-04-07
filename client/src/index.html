@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Template</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO -->
+  <meta name="description" content="Angular Project Template" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dshikun">
+  <meta name="twitter:title" content="Home page">
+  <meta name="twitter:description" content="An angular app that is actually search crawler bot friendly">
+  <meta name="twitter:image" content="https://i.imgur.com/13VlXI2.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Angular">
+  <meta property="og:title" content="Home Page">
+  <meta property="og:description" content="SSR SEO">
+  <meta property="og:image" content="https://i.imgur.com/13VlXI2.png">
+  <meta property="og:url" content="https://instafire-app.firebaseapp.com">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#192a51">
+  <!-- -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    #loading {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+      background: #192a51;
+      color: #fff;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+    }
+
+    #spinner {
+      margin: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid rgb(184, 184, 184);
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <app-root>
+    <div id="loading">
+      <noscript>To use this application you should enable JavaScript in your browser settings</noscript>
+      <span id="spinner"></span>
+    </div>
+  </app-root>
+</body>
+
+</html>
