@@ -15,16 +15,16 @@ export class SeoService {
             ...config
         }
         this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
-        this.meta.updateTag({ name: 'twitter:site', content: '@angularfirebase' });
+        this.meta.updateTag({ name: 'twitter:site', content: '@dshikun' });
         this.meta.updateTag({ name: 'twitter:title', content: config.title });
         this.meta.updateTag({ name: 'twitter:description', content: config.description });
         this.meta.updateTag({ name: 'twitter:image', content: config.image });
 
         this.meta.updateTag({ property: 'og:type', content: 'article' });
-        this.meta.updateTag({ property: 'og:site_name', content: 'AngularFirebase' });
+        this.meta.updateTag({ property: 'og:site_name', content: 'AngularTemplate' });
         this.meta.updateTag({ property: 'og:title', content: config.title });
         this.meta.updateTag({ property: 'og:description', content: config.description });
         this.meta.updateTag({ property: 'og:image', content: config.image });
-        this.meta.updateTag({ property: 'og:url', content: `https://instafire-app.firebaseapp.com/${config.slug}` });
+        this.meta.updateTag({ property: 'og:url', content: `https://example.com/${config.slug}` });
     }
 }
