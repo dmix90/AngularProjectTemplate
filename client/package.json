@@ -9,7 +9,8 @@
     "build_gh": "ng build --prod --base-href /AngularProjectTemplate/ && ngh",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prerender": "ts-node --inspect -r prerender.ts"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/http": "^5.2.0",
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/platform-server": "^5.2.9",
     "@angular/router": "^5.2.0",
     "@angular/service-worker": "^5.2.9",
     "apollo-angular": "^1.0.1",
@@ -42,6 +44,8 @@
     "@types/node": "~6.0.60",
     "angular-cli-ghpages": "^0.5.2",
     "codelyzer": "^4.0.1",
+    "express": "^4.16.3",
+    "html-minifier": "^3.5.14",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",

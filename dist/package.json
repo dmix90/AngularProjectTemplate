@@ -5,6 +5,7 @@
   "author": "Dmitry Shikunov <dshikunov@outlook.com> (https://github.com/dmix90)",
   "license": "MIT",
   "scripts": {
+    "render": "ts-node render",
     "server": "node -r tsconfig-paths/register ./server/server.js"
   },
   "dependencies": {

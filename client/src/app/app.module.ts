@@ -1,25 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
+import { RouterModule, RouterLinkActive } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+//PWA
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '@environments/environment';
+//Views
 import { HeaderComponent } from '@views/header/header.component';
 import { FooterComponent } from '@views/footer/footer.component';
 import { HomeComponent } from '@views/home/home.component';
 import { ErrorComponent } from '@views/error/error.component';
 import { AboutComponent } from '@views/about/about.component';
-import { AppRoutingModule } from '@modules/app.routing.module';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+//Components
+import { TodoComponent } from '@components/todo/todo.component';
+import { StatusComponent } from './components/status/status.component';
 //Apollo GraphQL
 import { ApolloModule, Apollo } from 'apollo-angular';
 import { HttpLinkModule, HttpLink } from 'apollo-angular-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-//
-//PWA
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '@environments/environment';
-//
-import { TodoComponent } from '@components/todo/todo.component';
-import { StatusComponent } from './components/status/status.component';
-//
+//Services
 import { SeoService } from '@services/seo.service';
 
 @Component({
@@ -45,13 +45,20 @@ export class AppComponent { }
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: '', pathMatch: 'full', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: '404', component: ErrorComponent },
+      { path: '**', redirectTo: '404' },
+    ], { enableTracing: false, }),
+    // AppRoutingModule,
     environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : [],
     FormsModule,
     HttpClientModule,
     ApolloModule,
     HttpLinkModule
   ],
+  exports: [RouterModule, RouterLinkActive],
   providers: [SeoService],
   bootstrap: [AppComponent]
 })
