@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "template"
+    "name": "template",
+    "ejected": false
   },
   "apps": [
     {
@@ -13,7 +14,6 @@
         "favicon.ico",
         "manifest.json"
       ],
-      "serviceWorker": true,
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -21,6 +21,7 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+      "serviceWorker": true,
       "styles": [
         "styles.scss"
       ],
@@ -40,7 +41,6 @@
         "favicon.ico",
         "manifest.json"
       ],
-      "serviceWorker": true,
       "index": "index.html",
       "main": "main.prerender.ts",
       "polyfills": "polyfills.ts",
@@ -48,6 +48,7 @@
       "tsconfig": "tsconfig.prerender.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+      "serviceWorker": true,
       "styles": [
         "styles.scss"
       ],
@@ -85,22 +86,22 @@
   },
   "defaults": {
     "styleExt": "scss",
+    "class": {
+      "spec": false
+    },
     "component": {
       "spec": false
     },
-    "service": {
-      "spec": false
-    },
     "directive": {
-      "spec": false
-    },
-    "class": {
       "spec": false
     },
     "module": {
       "spec": false
     },
     "pipe": {
+      "spec": false
+    },
+    "service": {
       "spec": false
     }
   }
