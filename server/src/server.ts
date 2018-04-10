@@ -58,7 +58,7 @@ const bootstrap = async () => {
     const http2Server = createServer(httpsOptions, httpsServer);
 
     httpServer.listen(port, () => {
-        console.log(`:::Express-HTTP Server is listening on porn: ${port}:::`);
+        console.log(`:::Express-HTTP Server is listening on port: ${port}:::`);
     })
     http2Server.listen(443, (err) => {
         if (err) {

@@ -51,7 +51,6 @@ export class AppComponent { }
       { path: '404', component: ErrorComponent },
       { path: '**', redirectTo: '404' },
     ], { enableTracing: false, }),
-    // AppRoutingModule,
     environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : [],
     FormsModule,
     HttpClientModule,
